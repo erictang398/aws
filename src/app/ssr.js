@@ -13,7 +13,7 @@ export default function SSR({ formattedDate }) {
     );
   }
   
-  export async function getServerSideProps() {
+  export function getServerSideProps() {
     const renderDate = Date.now();
     const formattedDate = new Intl.DateTimeFormat("en-US", {
       dateStyle: "long",
